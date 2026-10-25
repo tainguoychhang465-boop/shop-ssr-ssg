@@ -9,10 +9,10 @@ import { money } from "../lib/cart";
 export async function getStaticProps() {
   const products = getAllProducts();
   const categories = ["All", ...new Set(products.map((p) => p.category))];
-  return { props: { products, categories, builtAt: new Date().toISOString() } };
+  return { props: { products, categories } };
 }
 
-export default function Home({ products, categories, builtAt }) {
+export default function Home({ products, categories }) {
   const [category, setCategory] = useState("All");
   const [query, setQuery] = useState("");
 
@@ -23,9 +23,8 @@ export default function Home({ products, categories, builtAt }) {
   );
 
   return (
-    <Layout title="Catalog" mode="SSG">
+    <Layout title="Catalog">
       <h1>Product Catalog</h1>
-      <p className="muted">Page generated at build time: {new Date(builtAt).toLocaleString("en-GB")}</p>
 
       <div className="toolbar">
         <input

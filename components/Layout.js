@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { readCartCountFromCookie } from "../lib/cartClient";
 
-export default function Layout({ title, mode, children }) {
+export default function Layout({ title, children }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -31,7 +31,6 @@ export default function Layout({ title, mode, children }) {
         </div>
       </header>
       <main className="container">
-        {mode && <div className={`mode mode-${mode.toLowerCase()}`}>Rendered with {mode}</div>}
         {children}
       </main>
       <footer className="footer">© 2026 TechShop · Next.js SSR &amp; SSG demo</footer>

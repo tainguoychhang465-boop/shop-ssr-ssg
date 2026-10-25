@@ -25,7 +25,7 @@ export default function CartPage({ summary }) {
   const { items, subtotal, tax, shipping, total } = summary;
 
   return (
-    <Layout title="Cart" mode="SSR">
+    <Layout title="Cart">
       <h1>Shopping Cart</h1>
 
       {items.length === 0 ? (

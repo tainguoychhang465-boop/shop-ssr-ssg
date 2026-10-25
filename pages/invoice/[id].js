@@ -18,7 +18,7 @@ export default function Invoice({ order }) {
   }, []);
 
   return (
-    <Layout title={`Invoice ${order.id}`} mode="SSR">
+    <Layout title={`Invoice ${order.id}`}>
       <div className="success no-print">✅ Thank you! Your order has been placed.</div>
 
       <div className="invoice">

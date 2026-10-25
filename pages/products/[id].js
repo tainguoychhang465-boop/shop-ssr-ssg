@@ -23,7 +23,7 @@ export default function ProductDetail({ product, related }) {
   const [qty, setQty] = useState(1);
 
   return (
-    <Layout title={product.name} mode="SSG">
+    <Layout title={product.name}>
       <p><Link href="/">← Back to catalog</Link></p>
 
       <div className="detail">

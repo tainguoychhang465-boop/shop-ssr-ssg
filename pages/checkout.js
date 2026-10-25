@@ -15,7 +15,7 @@ export default function Checkout({ summary, error }) {
   const { items, subtotal, tax, shipping, total } = summary;
 
   return (
-    <Layout title="Checkout" mode="SSR">
+    <Layout title="Checkout">
       <h1>Checkout</h1>
       {error && <div className="alert">{error}</div>}
 
