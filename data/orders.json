@@ -1,0 +1,31 @@
+[
+  {
+    "id": "INV-20261025-6280",
+    "createdAt": "2026-10-25T07:08:33.977Z",
+    "status": "Paid / Confirmed",
+    "paymentMethod": "Cash on Delivery",
+    "note": "",
+    "customer": {
+      "name": "chhang",
+      "email": "chhang@gmailcom",
+      "phone": "111111111111",
+      "address": "pp"
+    },
+    "items": [
+      {
+        "id": 1,
+        "name": "ASUS Vivobook 14",
+        "image": "/images/laptops/asus-vivobook-14.webp",
+        "price": 499,
+        "stock": 20,
+        "qty": 1,
+        "lineTotal": 499
+      }
+    ],
+    "count": 1,
+    "subtotal": 499,
+    "shipping": 0,
+    "tax": 49.9,
+    "total": 548.9
+  }
+]
